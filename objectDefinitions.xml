@@ -1,0 +1,82 @@
+<!--Project Democracy Revolt
+A Tool For Peaceful Political Revolution-->
+<?xml version="1.0" encoding="UTF-8"?>
+<Citizen>
+
+	<UID></UID> <!-- Unique ID, req -->
+	
+	<Name>
+		<Last_Name></Last_Name> <!--Text-->
+		<First_Name></First_Name> <!--Text-->
+		<Middle_Name></Middle_Name> <!--Text-->
+		<Display_Name></Display_Name> <!--Text-->
+	</Name>
+	
+	<Email_Address></Email_Address> <!--Email Restrict -->
+	
+	<Cell_Phone></Cell_Phone> <!--Number: Phone Format Restrict -->
+	
+	<Current_Address>
+		<Address_1></Address_1> <!--Text-->
+		<Address_2></Address_2> <!--Text-->
+		<City></City> <!--Text: Selection Restrict -->
+		<State></State> <!--Text: Selection Restrict -->
+		<Country></Country> <!--Text: Selection Restrict -->
+		<Zip></Zip> <!--Number: Mail Code Format Restrict-->
+	</Current_Address>
+	
+	<Voting>
+		<registered_zip></registered_zip> <!-- Number: Zip on Voter Registration, Mail Code Format Restrict, req -->
+		<Voter_ID#></Voter_ID#> <!--Object: Formatted By Source  -->
+		<Future>
+			<Date></Date> <!--Day Vote Is Scheduled On-->
+			<Issue></Issue> <!--Text: Selection-->
+			<Item></Item> <!--Text: Explaining The Subject and Pertinent Details Of Vote-->
+			<Level></Level> <!--Text: Selection - Federal, State, County/Parish, City-->
+		</Future>
+		<Record>
+			<Date></Date>
+			<Item></Item> <!--Text: Explaining The Vote-->
+			<Issue></Issue> <!--Text: Selection-->
+			<Level></Level> <!--Object-->
+			<Vote_Cast></Vote_Cast> <!--Block & Chain Up_Down Bit-->
+		</Record>
+	</Voting>
+	
+	<Issues>
+		<Bills></Bills> <!--Text: Bill UID-->
+		<Category></Category> <!-- Text: Selection Restrict-->
+		<Events></Events> <!--Object: Political Rally's, Activist Actions, Etc. by State, Zip-->
+		<News></News> <!--Object: Searches By Issues, Sources, Zip -->
+		<Caucus></Caucus> <!--Text: Politcal Alignment- Selection - Conservative, Libertarian, Liberal, Progressive, Socialist, Communist, req -->
+		<Allied_Citizens></Allied_Citizens> <!--UIDs List-->
+	</Issues>
+
+</Citizen>
+	
+<Representatives>
+		<Name></Name> <!--Text-->
+		<State></State> <!--Text: Selection Restrict, req -->
+		<Title></Title> <!--Text, req -->
+		<Level></Level> <!--Text: Selection - Federal, State, County/Parish, City -->
+		<District></District> <!--Text: ID -->
+		<Contact>
+			<Email_Address></Email_Address> <!--Email Restrict -->
+			<Office_Phone></Office_Phone> <!--Number: Phone Format Restrict -->
+			<Address>
+				<Address_1></Address_1> <!--Text-->
+				<Address_2></Address_2> <!--Text-->
+				<City></City> <!--Text: Selection Restrict -->
+				<State></State> <!--Text: Selection Restrict -->
+				<Country></Country> <!--Text: Selection Restrict -->
+				<Zip></Zip> <!--Number: Mail Code Format Restrict-->
+			</Address>
+		</Contact>		
+		<Election_Funding>
+			<Corporation_Lobby_Name></Corporation_Lobby_Name> <!--Text-->
+				<Sector></Sector> <!--Text: Selection Ticker Restrict -->
+					<Industry></Industry> <!--Text: Selection Ticker Restrict -->
+						<Specific></Specific> <!--Text-->
+			<Amount></Amount> <!--Currency-->
+		</Election_Funding>
+</Representatives>
